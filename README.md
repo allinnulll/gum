@@ -1,4 +1,4 @@
-# douban
+# gum(douban)
 
 > A Vue.js project
 
