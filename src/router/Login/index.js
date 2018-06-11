@@ -1,4 +1,5 @@
-import Login from '@/components/Login'
+// 路由按需加载，同一webpackChunkName会被合并进同一个js文件
+const Login = () => import(/* webpackChunkName: "login" */ '@/components/Login')
 
 export default [
   {

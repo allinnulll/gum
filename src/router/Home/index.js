@@ -16,6 +16,7 @@ export default [
     path: '/home',
     name: 'Home_home',
     component: Home,
+    redirect: {name: 'Home_sideNav'},
     children: [
       {
         path: '',
