@@ -1,6 +1,14 @@
 import Vue from 'vue'
 import store from '@/store'
 import getType from './dataType'
+import vueRouter from '@/router'
+
+// const path = store.state.path
+// 路由守卫
+vueRouter.beforeEach((to, from, next) => {
+  // console.log(to, from)
+  next()
+})
 
 const skipType = {
   go (params) {

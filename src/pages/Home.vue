@@ -3,6 +3,7 @@
 		<m-header></m-header>
 		<button @click="login">去登录</button>
 		<button @click="book">Book</button>
+		<button @click="user">user</button>
 		<router-view name="sideNav"></router-view>
 		这是首页内容
 		<router-view></router-view>
@@ -32,6 +33,9 @@ export default {
     },
     book () {
       this.pageSkip({type: 'go', name: 'Book_book'})
+    },
+    user () {
+      this.pageSkip({type: 'go', name: 'Home_user'})
     }
   }
 }

@@ -3,11 +3,11 @@ import Router from 'vue-router'
 
 import Login from '@/router/Login'
 import Home from '@/router/Home'
-import Book from '@/router/Book'
+import Sort from '@/router/Sort'
 
 Vue.use(Router)
 
-const routes = [].concat(Login, Home, Book)
+const routes = [].concat(Login, Home, Sort)
 
 export default new Router({
   mode: 'history',

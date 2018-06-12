@@ -1,5 +1,6 @@
 const state = {
-  slideType: 'slide-fade'
+  slideType: 'slide-fade',
+  path: []
 }
 
 // getters
@@ -18,6 +19,12 @@ const actions = {
 const mutations = {
   setSlideType (state, type) {
     state.slideType = type
+  },
+  addPath (state, p) {
+    state.path.push(p)
+  },
+  removePath (state, p) {
+    state.path.pop()
   }
 }
 

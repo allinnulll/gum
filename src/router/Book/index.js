@@ -2,8 +2,9 @@ const Book = () => import(/* webpackChunkName: "book" */ '@/pages/Book')
 
 export default [
   {
-    path: '/book',
+    path: 'book',
     name: 'Book_book',
-    component: Book
+    component: Book,
+    props: { page: 'book' }
   }
 ]

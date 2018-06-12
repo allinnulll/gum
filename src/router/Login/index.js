@@ -5,6 +5,7 @@ export default [
   {
     path: '/login',
     name: 'Login_login',
-    component: Login
+    component: Login,
+    props: {name: 'adsfadsfadsf'}
   }
 ]
